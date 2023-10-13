@@ -29,7 +29,7 @@ import public "{{{modelPackage}}}/{{{import}}}.proto";
     {{/allowableValues}}
   }
 
-  {{enumName}} {{name}} = {{vendorExtensions.x-protobuf-index}};
+  {{#vendorExtensions.x-protobuf-type}}{{{.}}} {{/vendorExtensions.x-protobuf-type}}{{enumName}} {{name}} = {{vendorExtensions.x-protobuf-index}};
   {{/isEnum}}
 
   {{/vars}}
